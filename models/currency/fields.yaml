@@ -1,0 +1,36 @@
+# Created By ./acorn-create-system v1.0
+fields:
+  id:
+    label: acorn.finance::lang.models.general.id
+    type: text
+    span: storm
+    cssClass: col-xs-6
+    hidden: true
+    nameFrom: name
+  name:
+    label: acorn.finance::lang.models.general.name
+    type: text
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    nameFrom: name
+  shortname:
+    label: acorn.finance::lang.models.currency.shortname
+    type: text
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    nameFrom: name
+  symbol:
+    label: acorn.finance::lang.models.currency.symbol
+    type: text
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    nameFrom: name
+  _qrcode:
+      type: partial
+      context: update
+      span: storm
+      cssClass: 'col-xs-6'
+      path: ~/modules/acorn/partials/_qrcode

@@ -1,0 +1,32 @@
+
+navigation:
+    finance-setup:
+        label: acorn.finance::lang.plugin.name
+        url:
+        icon: icon-finance
+        sideMenu:
+            currencies:
+                label: acorn.finance::lang.models.currency.label_plural
+                url: acorn/finance/currencies
+                icon: icon-currency
+                counter: \Acorn\Finance\Models\Currency::menuitemCount
+            invoices:
+                label: acorn.finance::lang.models.invoice.label_plural
+                url: acorn/finance/invoices
+                icon: icon-invoice
+                counter: \Acorn\Finance\Models\Invoice::menuitemCount
+            payments:
+                label: acorn.finance::lang.models.payment.label_plural
+                url: acorn/finance/payments
+                icon: icon-payment
+                counter: \Acorn\Finance\Models\Payment::menuitemCount
+            purchases:
+                label: acorn.finance::lang.models.purchase.label_plural
+                url: acorn/finance/purchases
+                icon: icon-purchase
+                counter: \Acorn\Finance\Models\Purchase::menuitemCount
+            receipts:
+                label: acorn.finance::lang.models.receipt.label_plural
+                url: acorn/finance/receipts
+                icon: icon-receipt
+                counter: \Acorn\Finance\Models\Receipt::menuitemCount

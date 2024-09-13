@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'acorn.finance::lang.models.purchase.label'
+
+# Model Form Field configuration
+form: $/acorn/finance/models/purchase/fields.yaml
+
+# Model Class name
+modelClass: Acorn\Finance\Models\Purchase
+
+# Default redirect location
+defaultRedirect: acorn/finance/purchases
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: acorn/finance/purchases/update/:id
+    redirectClose: acorn/finance/purchases
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: acorn/finance/purchases
+    redirectClose: acorn/finance/purchases
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

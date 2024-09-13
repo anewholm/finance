@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'acorn.finance::lang.models.currency.label'
+
+# Model Form Field configuration
+form: $/acorn/finance/models/currency/fields.yaml
+
+# Model Class name
+modelClass: Acorn\Finance\Models\Currency
+
+# Default redirect location
+defaultRedirect: acorn/finance/currencies
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: acorn/finance/currencies/update/:id
+    redirectClose: acorn/finance/currencies
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: acorn/finance/currencies
+    redirectClose: acorn/finance/currencies
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

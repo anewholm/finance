@@ -1,0 +1,32 @@
+# Created By ./acorn-create-system v1.0
+columns:
+  id:
+    label: acorn.finance::lang.models.general.id
+    type: text
+    searchable: true
+    sortable: false
+    invisible: true
+  name:
+    label: acorn.finance::lang.models.general.name
+    type: text
+    searchable: true
+    sortable: false
+    invisible: false
+  shortname:
+    label: acorn.finance::lang.models.currency.shortname
+    type: text
+    searchable: true
+    sortable: false
+    invisible: false
+  symbol:
+    label: acorn.finance::lang.models.currency.symbol
+    type: text
+    searchable: true
+    sortable: false
+    invisible: false
+  _qrcode:
+      type: partial
+      path: ~/modules/acorn/partials/_qrcode
+      sortable: false
+      searchable: false
+      invisible: true

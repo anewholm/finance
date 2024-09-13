@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'acorn.finance::lang.models.payment.label'
+
+# Model Form Field configuration
+form: $/acorn/finance/models/payment/fields.yaml
+
+# Model Class name
+modelClass: Acorn\Finance\Models\Payment
+
+# Default redirect location
+defaultRedirect: acorn/finance/payments
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: acorn/finance/payments/update/:id
+    redirectClose: acorn/finance/payments
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: acorn/finance/payments
+    redirectClose: acorn/finance/payments
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

@@ -1,0 +1,56 @@
+# Created By ./acorn-create-system v1.0
+columns:
+  id:
+    label: acorn.finance::lang.models.general.id
+    type: text
+    searchable: true
+    sortable: false
+    invisible: true
+  purchase[fully_qualified_name]:
+    label: acorn.finance::lang.models.purchase.label
+    type: text
+    searchable: false
+    sortable: false
+    invisible: false
+  number:
+    label: acorn.finance::lang.models.receipt.number
+    type: number
+    searchable: true
+    sortable: false
+    invisible: false
+  currency[fully_qualified_name]:
+    label: acorn.finance::lang.models.currency.label
+    type: text
+    searchable: false
+    sortable: false
+    invisible: false
+  amount:
+    label: acorn.finance::lang.models.receipt.amount
+    type: number
+    searchable: true
+    sortable: false
+    invisible: false
+  name:
+    label: acorn.finance::lang.models.general.name
+    type: text
+    searchable: true
+    sortable: false
+    invisible: false
+  backend_user[full_name]:
+    label: acorn.finance::lang.models.receipt.backend_user
+    type: number
+    searchable: false
+    sortable: false
+    invisible: false
+  backend_user_group[name]:
+    label: acorn.finance::lang.models.receipt.backend_user_group
+    type: number
+    searchable: false
+    sortable: false
+    invisible: false
+  _qrcode:
+      type: partial
+      path: ~/modules/acorn/partials/_qrcode
+      sortable: false
+      searchable: false
+      invisible: true

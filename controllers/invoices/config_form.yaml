@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'acorn.finance::lang.models.invoice.label'
+
+# Model Form Field configuration
+form: $/acorn/finance/models/invoice/fields.yaml
+
+# Model Class name
+modelClass: Acorn\Finance\Models\Invoice
+
+# Default redirect location
+defaultRedirect: acorn/finance/invoices
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: acorn/finance/invoices/update/:id
+    redirectClose: acorn/finance/invoices
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: acorn/finance/invoices
+    redirectClose: acorn/finance/invoices
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

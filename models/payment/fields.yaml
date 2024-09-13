@@ -1,0 +1,72 @@
+# Created By ./acorn-create-system v1.0
+fields:
+  id:
+    label: acorn.finance::lang.models.general.id
+    type: text
+    span: storm
+    cssClass: col-xs-6
+    hidden: true
+    nameFrom: name
+  invoice:
+    label: acorn.finance::lang.models.invoice.label
+    type: dropdown
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    options: Acorn\Finance\Models\Invoice::dropdownOptions
+    nameFrom: fully_qualified_name
+  currency:
+    label: acorn.finance::lang.models.currency.label
+    type: dropdown
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    options: Acorn\Finance\Models\Currency::dropdownOptions
+    nameFrom: fully_qualified_name
+  amount:
+    label: acorn.finance::lang.models.payment.amount
+    type: number
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    nameFrom: name
+  number:
+    label: acorn.finance::lang.models.payment.number
+    type: number
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    nameFrom: name
+  name:
+    label: acorn.finance::lang.models.general.name
+    type: text
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    nameFrom: name
+    disabled: true
+    context: update
+  backend_user:
+    label: acorn.finance::lang.models.payment.backend_user
+    type: dropdown
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    options: Acorn\Model::dropdownOptions
+    optionsModel: \Backend\Models\User
+    nameFrom: full_name
+  backend_user_group:
+    label: acorn.finance::lang.models.payment.backend_user_group
+    type: dropdown
+    span: storm
+    cssClass: col-xs-6
+    hidden: false
+    options: Acorn\Model::dropdownOptions
+    optionsModel: \Backend\Models\UserGroup
+    nameFrom: name
+  _qrcode:
+      type: partial
+      context: update
+      span: storm
+      cssClass: 'col-xs-6'
+      path: ~/modules/acorn/partials/_qrcode
